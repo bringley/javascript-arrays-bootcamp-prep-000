@@ -48,7 +48,7 @@ numbers = [...numbers, 4]
 //you can also add elements at a specific array index - any undefined items will be left as such - this can lead to unexpected behavior
 numbers[10] = 10
 
-//operating within the middle of the array is trickier - you can do this with splice()
+//operating within the middle of the array is trickier - you can do this with the splice() method
 //all splice() arguments are optional
 //splice(index, #elemToAdd, #elemToRemove...)
 //let items = [1, 2, 3, 4]
@@ -61,6 +61,9 @@ numbers[10] = 10
 //var items = [1, 2, 3, 4, 5]
 //let's remove the third item
 //var newItems = [...items.slice(0, 2), ...items.slice(3)] gives [1, 2] & [4, 5] combined to give [1, 2, 4, 5] 
+
+//array indices are actually strings
+//the .keys property will return array indices as strings
 
 //todo
 var chocolateBars = [
