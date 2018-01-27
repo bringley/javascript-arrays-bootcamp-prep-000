@@ -46,10 +46,14 @@ numbers = [...numbers, 4]
 //you can also add elements at a specific array index - any undefined items will be left as such - this can lead to unexpected behavior
 numbers[10] = 10
 
-//operating within the middle of the array is trickier
+//operating within the middle of the array is trickier - you can do this with splice()
 //all splice() arguments are optional
-//splice(index, #elemToAdd, #elemToRemove)
-
+//splice(index, #elemToAdd, #elemToRemove...)
+//let items = [1, 2, 3, 4]
+//items.splice() returns []
+//items.splice(1) removes everything after index 1 and returns [1]
+//items.splice(1, 1) removes one item after index 1 and returns [1, 3, 4]
+//items.splice(1, 1, 6, 7) removes one item after index 1 and adds items 6 and 7 thereafter, returning [1, 6, 7, 3, 4]
 
 //todo
 var chocolateBars = [
