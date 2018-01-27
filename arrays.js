@@ -64,6 +64,20 @@ numbers[10] = 10
 
 //array indices are actually strings
 //the .keys property will return array indices as strings
+//you can access array items at an index with either numbers or strings
+//array[2]
+//array[02]
+//array['2']
+//array['02'] <--- this won't work, string '02' cannot be coerced into number 2
+
+//now for the cool shyt
+//you can assign properties to arrays
+//var array = [1,2]
+//array.length = 1
+//array now returns [1]
+//properties don't have to mutate the array
+//array.myProperty = 'I'm a property'
+//this string doesn't exist as an item in the array, but can be called as array.myProperty to return the string 'I'm a property'
 
 //todo
 var chocolateBars = [
