@@ -34,12 +34,14 @@ var chocolateBars = [
   'skittles'
 ]
 
-//there are methods for mutating arrays
+//there are destructive methods for mutating arrays
 //push() adds item to end of array
 //unshift() adds item to start of array
 //shift() removes item from start of array
 
-//the spread operator allows for a new array in place rather than mutating the original array
+//there are also non-destructive methods for generating new arrays from existing arrays
+//slice() removes n items from the start of an existing array and a negative int argument removes n items from the end
+//the spread operator '...array' allows for the user to specify which items to add and whether to add them to the start or the end
 var numbers = [1, 2, 3]
 //[0, ...numbers]
 //[...numbers, 4]
@@ -80,3 +82,7 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
     return array.shift()
 }
 
+function removeElementFromBeginningOfArray(array) {
+  var newArray = array.slice(1)
+  return newArray
+}
