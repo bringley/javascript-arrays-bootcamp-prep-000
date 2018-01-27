@@ -34,7 +34,9 @@ var evenNumbers = new Array()
 //shift() removes item from start of array
 
 //there are also non-destructive methods for generating new arrays from existing arrays
-//slice() removes n items from the start of an existing array and a negative int argument removes n items from the end
+//slice(n) removes n items from the start of an existing array and a negative int argument removes n items from the end
+//slice(n, i) removes everything n items from the start of an argument and everything i items after n
+
 //the spread operator '...array' allows for the user to specify which items to add and whether to add them to the start or the end
 var numbers = [1, 2, 3]
 //[0, ...numbers]
@@ -54,6 +56,11 @@ numbers[10] = 10
 //items.splice(1) removes everything after index 1 and returns [1]
 //items.splice(1, 1) removes one item after index 1 and returns [1, 3, 4]
 //items.splice(1, 1, 6, 7) removes one item after index 1 and adds items 6 and 7 thereafter, returning [1, 6, 7, 3, 4]
+
+//combine splice() with the spread operator '...array' for more complex operations
+//var items = [1, 2, 3, 4, 5]
+//let's remove the third item
+//var newItems = [...items.slice(0, 2), ...items.slice(3)] gives [1, 2] & [4, 5] combined to give [1, 2, 4, 5] 
 
 //todo
 var chocolateBars = [
