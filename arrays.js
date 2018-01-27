@@ -37,6 +37,7 @@ var chocolateBars = [
 //there are methods for mutating arrays
 //push() adds item to end of array
 //unshift() adds item to start of array
+//shift() removes item from start of array
 
 //the spread operator allows for a new array in place rather than mutating the original array
 var numbers = [1, 2, 3]
@@ -54,9 +55,9 @@ function addElementToBeginningOfArray(array, element) {
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  //return array.unshift(element)
-  array = [element, ...array]
-  return array
+  return array.unshift(element)
+  //array = [element, ...array]
+  //return array
 }
 
 function addElementToEndOfArray(array, element) {
@@ -65,9 +66,15 @@ function addElementToEndOfArray(array, element) {
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
-  //return array.push(element)
-  array = [...array, element]
-  return array
+  return array.push(element)
+  //array = [...array, element]
+  //return array
 }
+
+function accessElementInArray(array, index) {
+  var element = array[index]
+  return element
+}
+
 
 
