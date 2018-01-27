@@ -45,8 +45,15 @@ var numbers = [1, 2, 3]
 //you can also mutate the original array if it's a variable
 numbers = [0, ...numbers]
 numbers = [...numbers, 4]
-//you can also add elements at a specific array index - any undefined items will be left as such
+//you can also add elements at a specific array index - any undefined items will be left as such - this can lead to unexpected behavior
 numbers[10] = 10
 
+function addElementToBeginningOfArray() {
+  
+}
+
+function destructivelyAddElementToBeginningOfArray() {
+  
+}
 
 
