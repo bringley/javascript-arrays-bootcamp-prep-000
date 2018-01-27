@@ -26,16 +26,9 @@ var tomatoSauceIngredients = [
 //you can also use the array constructor
 var evenNumbers = new Array()
 
-//todo
-var chocolateBars = [
-  'snickers',
-  'hundred grand',
-  'kitkat',
-  'skittles'
-]
-
 //there are destructive methods for mutating arrays
 //push() adds item to end of array
+//pop() removes item from end of array
 //unshift() adds item to start of array
 //shift() removes item from start of array
 
@@ -45,11 +38,20 @@ var chocolateBars = [
 var numbers = [1, 2, 3]
 //[0, ...numbers]
 //[...numbers, 4]
-//you can also mutate the original array if it's a variable
+
+//you can also destructively mutate the original array if it's a variable
 numbers = [0, ...numbers]
 numbers = [...numbers, 4]
 //you can also add elements at a specific array index - any undefined items will be left as such - this can lead to unexpected behavior
 numbers[10] = 10
+
+//todo
+var chocolateBars = [
+  'snickers',
+  'hundred grand',
+  'kitkat',
+  'skittles'
+]
 
 function addElementToBeginningOfArray(array, element) {
   var newArray = [element, ...array]
@@ -85,4 +87,8 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 function removeElementFromBeginningOfArray(array) {
   var newArray = array.slice(1)
   return newArray
+}
+
+destructivelyRemoveElementFromEndOfArray(array) {
+  return array.pop()
 }
