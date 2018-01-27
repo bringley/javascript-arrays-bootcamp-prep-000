@@ -103,9 +103,8 @@ function addElementToEndOfArray(array, element) {
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
-  return array.push(element)
-  //array = [...array, element]
-  //return array
+  array.push(element)
+  return array
 }
 
 function accessElementInArray(array, index) {
@@ -114,7 +113,7 @@ function accessElementInArray(array, index) {
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array) {
-    array =  array.shift(1)
+    array.shift()
     return array
 }
 
@@ -124,7 +123,7 @@ function removeElementFromBeginningOfArray(array) {
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
-  array = array.pop()
+  array.pop()
   return array
 }
 
