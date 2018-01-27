@@ -48,12 +48,13 @@ numbers = [...numbers, 4]
 //you can also add elements at a specific array index - any undefined items will be left as such - this can lead to unexpected behavior
 numbers[10] = 10
 
-function addElementToBeginningOfArray() {
-  
+function addElementToBeginningOfArray(array, element) {
+  var newArray = [element, ...array]
+  return newArray
 }
 
-function destructivelyAddElementToBeginningOfArray() {
-  
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  return array.unshift(element)
 }
 
 
