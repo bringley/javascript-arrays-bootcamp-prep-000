@@ -1,3 +1,4 @@
+//list a bunch of variables
 var ingredient1 = 'bread'
 var ingredient2 = 'mild cheese'
 var ingredient3 = 'sharp cheese'
@@ -5,6 +6,7 @@ var ingredient4 = 'butter'
 var ingredient5 = 'tomato'
 var ingredient6 = 'garlic'
 
+//now let's group a list of items into a single variable
 //array literals list values within square brackets
 var grilledCheeseIngredients = [
   'bread', 
@@ -14,7 +16,6 @@ var grilledCheeseIngredients = [
   'tomato', 
   'garlic'
 ]
-
 var tomatoSauceIngredients = [
   'tomato',
   'garlic',
@@ -23,7 +24,7 @@ var tomatoSauceIngredients = [
   'oregano'
 ]
 
-//you can also use the array constructor
+//you can also use the array constructor - note the use of 'new' in the constructor
 var evenNumbers = new Array()
 
 //there are destructive methods for mutating arrays
@@ -44,6 +45,11 @@ numbers = [0, ...numbers]
 numbers = [...numbers, 4]
 //you can also add elements at a specific array index - any undefined items will be left as such - this can lead to unexpected behavior
 numbers[10] = 10
+
+//operating within the middle of the array is trickier
+//all splice() arguments are optional
+//splice(index, #elemToAdd, #elemToRemove)
+
 
 //todo
 var chocolateBars = [
